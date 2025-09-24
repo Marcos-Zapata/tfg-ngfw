@@ -24,7 +24,7 @@ sudo apt install -y python3.12 python3.12-venv python3-pip
 Cada máquina de desarrollo tendrá su propio entorno virtual (excluido del repositorio por `.gitignore`):
 
 ```bash
-python3.11 -m venv .venv
+python3.12 -m venv .venv
 ```
 
 Esto crea la carpeta `.venv/` dentro del proyecto.

@@ -1,4 +1,14 @@
 version: "3.9"
-
 services:
-  # Los servicios se irán añadiendo aquí
+  capture:
+    build: ./services/capture
+    network_mode: host           # para que pueda ver las interfaces del host (útil en testbed)
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - IFACE=${CAPTURE_IFACE:-any}
+    volumes:
+      - ./data:/data
+      - ./logs:/logs
+    restart: unless-stopped
