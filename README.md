@@ -4,7 +4,6 @@ Proyecto de fin de grado: Diseño e implementación de un firewall de nueva gene
 
 ## Estructura
 - `services/`: contendrá los distintos módulos (capture, ml, etc.).
-- `data/`: datasets, pcaps (ignorado por git).
 - `docs/`: documentación y memoria.
 - `experiments/`: notebooks y pruebas.
 - `results/`: resultados de los experimentos.

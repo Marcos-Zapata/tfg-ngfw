@@ -3,7 +3,7 @@ from scapy.all import sniff, wrpcap
 from dotenv import load_dotenv
 
 
-IFACE = os.getenv("IFACE", "eth0")
+IFACE = os.getenv("CAPTURE_IFACE")
 PCAP_PATH = "/data/capture_%d.pcap" % int(time.time())
 LOG = "./logs/capture.log"
 
