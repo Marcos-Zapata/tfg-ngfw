@@ -1,14 +1,9 @@
 import pandas as pd
 from collections import Counter
+import sys
 import os 
 
-file_path = "/home/zapata/CICDDoS2019/01-12/"
-
-# Pedir al usuario el archivo
-filename = input("Introduce el nombre del archivo CSV (ej: 03-11.csv): ").strip()
-
-# Construir la ruta completa
-file_path = os.path.join(file_path, filename)
+file_path = sys.argv[1]
 
 # Verificar que existe
 if not os.path.isfile(file_path):
